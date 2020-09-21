@@ -15,7 +15,9 @@ Array.from(thumbUp).forEach(function (element) {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          'name': nam
+          'name': name,
+          'msg': msg,
+          'thumbUp': thumbUp
         })
       })
       .then(response => {
